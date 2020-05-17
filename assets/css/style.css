@@ -1,0 +1,63 @@
+/*-----------------------------------colors
+
+#2B4F22 (green) color in logo
+#bb2a1e (Red/Orange)
+#bbac1e (Yellow)
+#628457 (light Green)
+#730800 (Dark Red/Orange)
+#fff59c (Light Yellow)
+#8D98A7 (manatee)
+#A7754D (brownish)
+#DCCCBB (bone)
+#EAB464 (sunray)
+#77AF9C
+#DBD2E0 (grey)nav
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*-----------------------------------logo */
+
+.logo {
+  max-width: 120px;
+}
+
+/*-----------------------------------navbar */
+
+.container-navbar {
+    background-color: #DBD2E0;
+}
+
+.navbar-menu {
+    font-family: "Montserrat", sans-serif;
+    font-size: 130%;
+    letter-spacing: 2px;
+    margin-left: auto;
+}
+
+.navbar-menu li {
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+.nav-link-color {
+    color: #2B4F22;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.navbar-toggler-color {
+    color: #2B4F22;
+}
+
+.bars-toggler {
+    font-size: 2em;
+    color: #2B4F22;
+}
