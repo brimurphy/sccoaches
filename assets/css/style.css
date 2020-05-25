@@ -1,6 +1,7 @@
 /*-----------------------------------colors
 
 #2B4F22 (green) color in logo
+bfbfbe (green callout color)
 #9670ab (purple)
 #bb2a1e (Red/Orange)
 #bbac1e (Yellow)
@@ -26,6 +27,33 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container-navbar {
+  background-color: #dbd2e0;
+}
+
+.container-callout {
+  height: 100vh;
+  /*--css.tricks.com--*/
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/hero-img.jpg) no-repeat bottom left fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-our-story {
+}
+
+.container-coaches {
+}
+
+.container-success {
+}
+
 /*-----------------------------------colors */
 
 .nav-link-color {
@@ -45,6 +73,11 @@ body {
   color: #2b4f22;
 }
 
+.btn-callout--green {
+    color: #9670ab;
+    background-color: #2b4f22;
+}
+
 /*-----------------------------------misc */
 
 .uppercase {
@@ -57,11 +90,21 @@ body {
   max-width: 120px;
 }
 
-/*-----------------------------------navbar */
+/*-----------------------------------jumbotron */
 
-.container-navbar {
-  background-color: #dbd2e0;
+.jumbotron { 
+    background-color: transparent;
 }
+
+.jumbotron-callout {
+    color: #fff;
+    position: absolute;
+    bottom: -50;
+    right: 0;
+    font-size: 0.5rem;
+}
+
+/*-----------------------------------navbar */
 
 .navbar-menu {
   font-family: "Montserrat", sans-serif;
@@ -76,17 +119,41 @@ body {
 }
 
 .navbar-menu a:hover {
-    color: #9670ab;
-    border-bottom: 1px solid #9670ab;
+  color: #9670ab;
+  border-bottom: 1px solid #9670ab;
 }
 
 .nav-active {
-    border-bottom: 1px solid #2b4f22;
+  border-bottom: 1px solid #2b4f22;
 }
 
 .bars-toggler {
   font-size: 2em;
   color: #2b4f22;
+}
+/*-----------------------------------callout */
+
+.callout-header {
+    color: #DBD2E0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+
+
+/*-----------------------------------coach */
+
+.coach-image {
+  height: 150px;
+  width: 150px;
+}
+
+/*-----------------------------------success stories */
+
+.success-stories-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
 
 /*-----------------------------------footer */
@@ -116,9 +183,8 @@ footer {
 
 .social-links i:hover,
 .footer-nav i:hover {
-    color: #beb7c2;
+  color: #beb7c2;
 }
-
 
 .footer-nav li {
   display: inline;
@@ -126,10 +192,10 @@ footer {
 }
 
 .footer-nav i {
-font-size: 160%;
-margin: 0 auto;
-margin-top: 10px;
-padding: 20px;
+  font-size: 160%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 20px;
 }
 
 .footer-location {
