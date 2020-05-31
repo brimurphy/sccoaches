@@ -16,7 +16,7 @@ bfbfbe (green callout color)
 #DBD2E0 (grey)nav
 
 */
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Montserrat:wght@300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,300;1,400&family=Satisfy&display=swap');
 
 * {
   margin: 0;
@@ -25,6 +25,8 @@ bfbfbe (green callout color)
 
 body {
   font-family: "Roboto", sans-serif;
+  color: #171717;
+  background-color: #dbd2e0;
 }
 
 .container-navbar {
@@ -34,17 +36,26 @@ body {
 .container-callout {
   height: 100vh;
   /*--css.tricks.com--*/
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/hero-img.jpg) no-repeat bottom left fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/hero-img.jpg) no-repeat bottom center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.container-our-story,
+.container-coaches,
+.container-reviews {
+  height: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .container-our-story {
 }
 
@@ -74,7 +85,20 @@ body {
 }
 
 .btn-callout--green {
-    color: #9670ab;
+  color: #dbd2e0;
+  background-color: #2b4f22;
+}
+
+.btn-callout--green:hover {
+  color: #2b4f22;
+  background-color: #dbd2e0;
+}
+
+.container-our-story--purple {
+  background-color: #9670ab;
+}
+
+.container-reviews--green {
     background-color: #2b4f22;
 }
 
@@ -82,6 +106,13 @@ body {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.cite-signature {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.4rem;
+  float: right;
+  margin: 1rem;
 }
 
 /*-----------------------------------logo */
@@ -92,16 +123,29 @@ body {
 
 /*-----------------------------------jumbotron */
 
-.jumbotron { 
-    background-color: transparent;
+.jumbotron {
+  background-color: #9670ab5b;
+  border-radius: 10%;
+}
+
+.jumbotron-callout,
+.jumbotron-header,
+.jumbotron-paragraph {
+  color: #f3f3f3;
 }
 
 .jumbotron-callout {
-    color: #fff;
-    position: absolute;
-    bottom: -50;
-    right: 0;
-    font-size: 0.5rem;
+  position: absolute;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-top: 54px;
+  padding-bottom: 0;
+  right: 20px;
+  font-size: 0.5rem;
+}
+
+.jumbotron-paragraph {
+  font-size: 0.75rem;
 }
 
 /*-----------------------------------navbar */
@@ -134,27 +178,111 @@ body {
 /*-----------------------------------callout */
 
 .callout-header {
-    color: #DBD2E0;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
+  color: #dbd2e0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
+/*-----------------------------------our story */
 
+.our-story-header,
+.coach-header,
+.reviews-header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 46px;
+  margin-bottom: 23px;
+}
+.our-story-header {
+     color:#2b4f22;
+}
 
+.our-story-paragraph {
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 1.5px;
+  margin: 10px 20px;
+ 
+}
+
+.our-story-img {
+  padding: 15px 25px;
+  clear: both;
+  line-height: 0;
+  column-count: 4;
+  column-gap: 0px;
+}
+
+.our-story-img img {
+  width: 100%;
+}
 /*-----------------------------------coach */
+
+.coach-header {
+  color: #2b4f22;
+}
+
+.coach {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.coach img {
+  margin-bottom: 16px;
+}
+
+.coach .col-4 {
+  max-width: 25%;
+}
+
+.coach .col-8 {
+  max-width: 75%;
+}
 
 .coach-image {
   height: 150px;
   width: 150px;
 }
 
-/*-----------------------------------success stories */
-
-.success-stories-image {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
+.blockquote-coach {
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
+
+.coach-two {
+  position: absolute;
+  right: 0;
+}
+
+@media only screen and (max-width: 575px) {
+  /* www.w3schools.com position info helped me figure out my positioning issue */
+  .coach-two {
+    position: static;
+  }
+}
+
+/*-----------------------------------reviews */
+
+.reviews-image {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.reviews-header {
+    color: #beb7c2;
+}
+/* Build Responsive Real World Websites with HTML5 and CSS3 with  Jonas Schmedtmann */
+
+.blockquote-reviews {
+    color: #beb7c2;
+    font-style: italic;
+    padding: 2%;
+    line-height: 145%;
+}
+
 
 /*-----------------------------------footer */
 
@@ -216,4 +344,13 @@ footer {
 .footer-location p {
   font-size: 70%;
   line-height: 20px;
+}
+
+.footer-location a {
+    color: #2b4f22;
+}
+
+.footer-location a:hover {
+    color: #beb7c2;
+    text-decoration: none;
 }
