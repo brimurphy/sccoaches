@@ -16,7 +16,7 @@ bfbfbe (green callout color)
 #DBD2E0 (grey)nav
 
 */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,300;1,400&family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,300;1,400&family=Satisfy&display=swap");
 
 * {
   margin: 0;
@@ -51,7 +51,9 @@ body {
 
 .container-our-story,
 .container-coaches,
-.container-reviews {
+.container-reviews,
+.container-services,
+.container-outside {
   height: 100%;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -63,6 +65,12 @@ body {
 }
 
 .container-success {
+}
+
+.container-services {
+}
+
+.container-outside {
 }
 
 /*-----------------------------------colors */
@@ -99,7 +107,26 @@ body {
 }
 
 .container-reviews--green {
-    background-color: #2b4f22;
+  background-color: #2b4f22;
+}
+
+.container-services--purple {
+  background-color: #9670ab;
+}
+
+.container-outside--green {
+  color: #2b4f22;
+}
+/*-----------------------------------Headings */
+
+.our-story-header,
+.coach-header,
+.reviews-header,
+.services-header,
+.outside-header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 46px;
+  margin-bottom: 23px;
 }
 
 /*-----------------------------------misc */
@@ -115,6 +142,30 @@ body {
   margin: 1rem;
 }
 
+ul {
+  list-style: none;
+}
+
+/*-----------------------------------block divider */
+
+.block-divider {
+  margin: 8px auto;
+  width: 10%;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.block-divider-outside {
+  width: 50%;
+}
+
+.block-divider--green {
+  background-color: #2b4f22;
+}
+
+.block-divider--grey {
+  background-color: #beb7c2;
+}
 /*-----------------------------------logo */
 
 .logo {
@@ -185,15 +236,8 @@ body {
 
 /*-----------------------------------our story */
 
-.our-story-header,
-.coach-header,
-.reviews-header {
-  font-family: "Montserrat", sans-serif;
-  font-size: 46px;
-  margin-bottom: 23px;
-}
 .our-story-header {
-     color:#2b4f22;
+  color: #2b4f22;
 }
 
 .our-story-paragraph {
@@ -203,7 +247,7 @@ body {
   line-height: 1.4;
   letter-spacing: 1.5px;
   margin: 10px 20px;
- 
+  color: #f3f3f3;
 }
 
 .our-story-img {
@@ -246,8 +290,8 @@ body {
 }
 
 .blockquote-coach {
-    margin-right: 2rem;
-    margin-left: 2rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .coach-two {
@@ -272,18 +316,105 @@ body {
 }
 
 .reviews-header {
-    color: #beb7c2;
+  color: #beb7c2;
 }
-/* Build Responsive Real World Websites with HTML5 and CSS3 with  Jonas Schmedtmann */
 
 .blockquote-reviews {
-    color: #beb7c2;
-    font-style: italic;
-    padding: 2%;
-    line-height: 145%;
+  color: #beb7c2; /* Build Responsive Real World Websites with HTML5 and CSS3 with  Jonas Schmedtmann used to create review style */
+  font-style: italic;
+  padding: 2%;
+  line-height: 145%;
 }
 
+/*-----------------------------------services */
 
+.services-header,
+.services-header-classes {
+  color: #2b4f22;
+}
+
+.services-header-classes {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  line-height: 145%;
+  letter-spacing: 1.5px;
+}
+
+.services-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+  margin: 5%;
+}
+
+.bg-services-card {
+  color: #2b4f22;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-services {
+  color: #beb7c2;
+  background: 1px solid #2b4f22;
+  background-color: #2b4f22;
+  border-radius: 10%;
+}
+
+.btn-services:hover {
+  color: #2b4f22;
+  background: 1px solid #beb7c2;
+  background-color: #beb7c2;
+}
+
+/*-----------------------------------outside the gym */
+
+.outside-activity {
+  height: 90%;
+  margin: 4%;
+}
+
+.outside-img {
+  height: 300px;
+  width: 90%;
+  margin-top: 1%;
+  padding: 0 5%;
+}
+
+.outside-img img {
+  width: 100%;
+  max-height: 90%;
+  border-radius: 10%;
+}
+
+.outside-health img {
+  margin-top: 50px;
+}
+
+.outside-info {
+  line-height: 145%;
+  letter-spacing: 1.5px;
+}
+.outside-info h5 {
+  font-family: "montserrat", sans-serif;
+  font-size: 1.4rem;
+}
+.outside-info p {
+  font-size: 0.9rem;
+}
+
+.outside-info ul {
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .outside-activity {
+    margin: 1%;
+  }
+
+  .outside-health img {
+    margin-top: 10px;
+  }
+}
 /*-----------------------------------footer */
 
 footer {
@@ -347,10 +478,10 @@ footer {
 }
 
 .footer-location a {
-    color: #2b4f22;
+  color: #2b4f22;
 }
 
 .footer-location a:hover {
-    color: #beb7c2;
-    text-decoration: none;
+  color: #beb7c2;
+  text-decoration: none;
 }
