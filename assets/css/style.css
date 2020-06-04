@@ -1,7 +1,7 @@
 /*-----------------------------------colors
 
 #2B4F22 (green) color in logo
-bfbfbe (green callout color)
+bfbfbe (green hover color)
 #9670ab (purple)
 #bb2a1e (Red/Orange)
 #bbac1e (Yellow)
@@ -53,7 +53,8 @@ body {
 .container-coaches,
 .container-reviews,
 .container-services,
-.container-outside {
+.container-outside,
+.container-memberships {
   height: 100%;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -71,6 +72,9 @@ body {
 }
 
 .container-outside {
+}
+
+.container-memberships {
 }
 
 /*-----------------------------------colors */
@@ -92,16 +96,6 @@ body {
   color: #2b4f22;
 }
 
-.btn-callout--green {
-  color: #dbd2e0;
-  background-color: #2b4f22;
-}
-
-.btn-callout--green:hover {
-  color: #2b4f22;
-  background-color: #dbd2e0;
-}
-
 .container-our-story--purple {
   background-color: #9670ab;
 }
@@ -117,16 +111,54 @@ body {
 .container-outside--green {
   color: #2b4f22;
 }
+
+.container-memberships--green {
+  background-color: #2b4f22;
+}
+
+/*-----------------------------------Buttons */
+
+/* Button focus issued solved with help from Jonathon Munz */
+.btn:focus {
+    box-shadow: none;
+}
+
+.btn-callout--green {
+  color: #dbd2e0;
+  background-color: #2b4f22;
+}
+
+.btn-callout--green:hover,
+.btn-callout--green:active {
+  color: #2b4f22;
+  background-color: #dbd2e0;
+}
+
+.btn-memberships--purple {
+  color: #dbd2e0;
+  background-color: #9670ab;
+}
+
+.btn-memberships--purple:hover,
+.btn-memberships--purple:active {
+  color: #9670ab;
+  background-color: #dbd2e0;
+  border: 1px solid #9670ab;
+}
+
 /*-----------------------------------Headings */
 
-.our-story-header,
-.coach-header,
-.reviews-header,
-.services-header,
-.outside-header {
+.section-header {
   font-family: "Montserrat", sans-serif;
-  font-size: 46px;
-  margin-bottom: 23px;
+  font-size: 3em;
+  margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 575px) {
+  .section-header {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
 }
 
 /*-----------------------------------misc */
@@ -149,18 +181,22 @@ ul {
 /*-----------------------------------block divider */
 
 .block-divider {
-  margin: 8px auto;
+  margin: 15px auto;
   width: 10%;
   height: 5px;
   border-radius: 50%;
 }
 
-.block-divider-outside {
+.block-divider-long {
   width: 50%;
 }
 
 .block-divider--green {
   background-color: #2b4f22;
+}
+
+.block-divider--purple {
+  background-color: #9670ab;
 }
 
 .block-divider--grey {
@@ -213,7 +249,8 @@ ul {
   margin-right: 30px;
 }
 
-.navbar-menu a:hover {
+.navbar-menu a:hover,
+.navbar-menu a:active {
   color: #9670ab;
   border-bottom: 1px solid #9670ab;
 }
@@ -319,8 +356,9 @@ ul {
   color: #beb7c2;
 }
 
+/* Build Responsive Real World Websites with HTML5 and CSS3 with  Jonas Schmedtmann used to create review style */
 .blockquote-reviews {
-  color: #beb7c2; /* Build Responsive Real World Websites with HTML5 and CSS3 with  Jonas Schmedtmann used to create review style */
+  color: #beb7c2;
   font-style: italic;
   padding: 2%;
   line-height: 145%;
@@ -360,7 +398,8 @@ ul {
   border-radius: 10%;
 }
 
-.btn-services:hover {
+.btn-services:hover,
+.btn-services:active {
   color: #2b4f22;
   background: 1px solid #beb7c2;
   background-color: #beb7c2;
@@ -394,8 +433,8 @@ ul {
   line-height: 145%;
   letter-spacing: 1.5px;
 }
-.outside-info h5 {
-  font-family: "montserrat", sans-serif;
+.outside-info h3 {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
 }
 .outside-info p {
@@ -406,6 +445,10 @@ ul {
   font-size: 0.8rem;
 }
 
+.outside-info-nights {
+  padding-top: 26px;
+}
+
 @media only screen and (max-width: 1199px) {
   .outside-activity {
     margin: 1%;
@@ -414,7 +457,142 @@ ul {
   .outside-health img {
     margin-top: 10px;
   }
+
+  .outside-img {
+  height: 100%;
+  margin-bottom: 1%;;
 }
+
+.outside-info-nights {
+    padding-top: 0;
+}
+}
+
+/*-----------------------------------memberships */
+.memberships-box {
+  margin: 0 auto;
+}
+
+.memberships-header {
+  color: #9670ab;
+}
+
+.memberships-plan {
+  position: relative;
+  max-width: 22%;
+  height: 520px;
+  margin-bottom: 5%;
+  margin-left: 3%;
+  border: 1px solid #9670ab;
+  border-radius: 5px;
+  background-color: #dbd2e0;
+}
+
+.memberships-plan-box {
+}
+
+.memberships-plan-box h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  padding: 10px;
+  color: #9670ab;
+}
+
+.memberships-price {
+  font-size: 250%;
+  margin-bottom: 5px;
+  font-weight: 100;
+}
+
+.memberships-price span {
+  font-size: 40%;
+}
+
+.memberships-price ~ p {
+  font-size: 80%;
+  font-style: italic;
+}
+
+.memberships-list {
+  line-height: 145%;
+  letter-spacing: 1.5px;
+}
+
+.memberships-list li {
+  font-size: 80%;
+}
+
+.memberships-list li i {
+  font-size: 125%;
+  color: #9670ab;
+  padding: 5px;
+}
+
+.btn-memberships {
+  position: absolute;
+  bottom: 5px;
+  border-radius: 10%;
+}
+/* How to center a button W3Schools */
+.btn-sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 991px) {
+  .memberships-plan {
+    max-width: 44%;
+  }
+
+  .btn-memberships {
+    font-size: 95%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .memberships-list {
+    line-height: 125%;
+    letter-spacing: 1.2px;
+  }
+
+  .memberships-list li {
+    font-size: 75%;
+  }
+
+  .btn-memberships {
+    font-size: 90%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .memberships-plan-box h3 {
+    font-size: 1.4rem;
+    padding: 5px;
+  }
+
+  .memberships-price ~ p,
+  .memberships-list li {
+    font-size: 70%;
+  }
+
+  .memberships-price {
+    font-size: 200%;
+    margin-bottom: 2px;
+  }
+
+  .memberships-plan {
+    margin-left: 10%;
+    max-width: 80%;
+    height: 400px;
+  }
+
+  .btn-memberships {
+    font-size: 80%;
+    float: center;
+  }
+}
+
 /*-----------------------------------footer */
 
 footer {

@@ -1,44 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      type="text/css"
-    />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css " />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		type="text/css" />
 
-    <title>S&C Coaches Online</title>
-  </head>
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css " />
 
-  <body>
-  <!--Header-->
-    <header>
-      <div class="container-fluid container-navbar">
-        <!--Logo-->
-        <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="index.html"
-            ><img
+	<title>S&C Coaches Online</title>
+</head>
+
+<body>
+	<!--Header-->
+	<header>
+		<div class="container-fluid container-navbar">
+			<!--Logo-->
+			<nav class="navbar navbar-expand-lg">
+				<a class="navbar-brand" href="index.html"><img
               class="logo"
               src="assets/images/scc-logo-clear.png"
               alt="S&C Coaches logo"
           /></a>
 
-          <!--Navbar-->
+					<!--Navbar-->
 
-          <button
+					<button
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
@@ -53,122 +46,254 @@
             <!-- Change of toggler colour found on Stack Overflow by Amirreza Mohammadi -->
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mt-2 mt-lg-0 navbar-menu uppercase">
-              <li class="nav-item active">
-                <a class="nav-link nav-link-color" href="index.html"
-                  >Home <span class="sr-only"></span></a
-                >
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link nav-link-color" href="service.html"
-                  >Services <span class="sr-only"></span
-                ></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link nav-link-color nav-active" href="memberships.html"
-                  >Memberships <span class="sr-only">(current)</span
-                ></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link nav-link-color" href="contact.html"
-                  >Contact <span class="sr-only"></span
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+						<ul class="navbar-nav mt-2 mt-lg-0 navbar-menu uppercase">
+							<li class="nav-item active">
+								<a class="nav-link nav-link-color" href="index.html">Home
+									<span class="sr-only"></span></a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link nav-link-color" href="service.html">Services
+									<span class="sr-only"></span></a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link nav-link-color nav-active" href="memberships.html">Memberships
+									<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link nav-link-color" href="contact.html">Contact
+									<span class="sr-only"></span></a>
+							</li>
+						</ul>
+					</div>
+			</nav>
+		</div>
+	</header>
 
-    <section>memberships
-    </section>
+	<!--Memberships-->
 
-    <section></section>
+	<section class="container-fluid container-memberships container-memberships--green">
+    <div class="container">
+		<div class="row">
+			<div class="col">
+				<h2 class="uppercase text-center section-header memberships-header">Choose your plan</h2>
+				<hr class="block-divider block-divider--purple">
+			</div>
+		</div>
 
-    <section></section>
+		<div class="row memberships-box">
+			<div class="col-12 col-sm-6 col-lg-3 memberships-plan">
+				<div class="text-center memberships-plan-box">
+					<h3>Platinum Plan</h3>
+					<p class="memberships-price">€159 <span>per month</span></p>
+					<p>Perfect for the fitness freaks out there!</p>
+				</div>
+				<ul class="memberships-list">
+					<li><i class="fa fa-check"></i>Unlimited Access To All Private Classes</li>
+                    <li><i class="fa fa-check"></i>Private Group Training</li>
+                    <li><i class="fa fa-check"></i>Healthy Easy Recipes</li>
+                    <li><i class="fa fa-check"></i>Mobility Training</li>
+                    <li><i class="fa fa-check"></i>Online Daily Workouts</li>
+				</ul>
+                <div class="btn-sign-up">
+                <a href="sign-up.html" class="btn btn-lg btn-memberships btn-memberships--purple">Select Plan</a>
+                </div>
+			</div>
+            <div class="col-12 col-sm-6 col-lg-3 memberships-plan">
+				<div class="text-center memberships-plan-box">
+					<h3>Silver Plan</h3>
+					<p class="memberships-price">€119 <span>per month</span></p>
+					<p>Perfect for the commited gym goer!</p>
+				</div>
+				<ul class="memberships-list">
+					<li><i class="fa fa-check"></i>Access to 3 private sessions per week</li>
+					<li><i class="fa fa-check"></i>Private Group Training</li>
+					<li><i class="fa fa-check"></i>Progress Tracking</li>
+					<li><i class="fa fa-check"></i>Mobility Training</li>
+					<li><i class="fa fa-check"></i>Nutritional Advice</li>
 
-    <!--Footer-->
-    <footer>
-      <div class="container-fluid footer-color">
-        <div class="row">
-          <div class="col-md-4">
-            <ul class="footer-nav uppercase">
-              <li>
-                <a class="footer-nav-color" href="index.html"
-                  ><i class="fa fa-home"></i
-                ></a>
-              </li>
-              <li>
-                <a class="footer-nav-color" href="service.html"
-                  ><i class="fa fa-table"></i
-                ></a>
-              </li>
-              <li>
-                <a class="footer-nav-color" href="memberships.html"
-                  ><i class="fa fa-address-card"></i
-                ></a>
-              </li>
-              <li>
-                <a class="footer-nav-color" href="contact.html"
-                  ><i class="fa fa-envelope"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="social-links">
-              <li>
-                <a
-                  href="https://www.facebook.com/sccoachesdublin/"
-                  target="_blank"
-                  ><i class="fa fa-facebook-f"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/sccoaches/" target="_blank"
-                  ><i class="fa fa-instagram"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/watch?v=AG8d9fFdRJ0"
-                  target="_blank"
-                  ><i class="fa fa-youtube"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4 footer-location">
-            <h5 class="uppercase">Where to find us</h5>
-            <a href="https://www.google.com/maps/dir//Level+1+SBG+Tallaght,+Glen+Abbey+Complex,+Belgard+Road,+Cookstown,+Dublin+24+%E2%80%8B%E2%80%8B/@53.2850563,-6.4301569,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x486774b2987a9509:0x11b28940d8d4c0dd!2m2!1d-6.3711265!2d53.2957625"
-              target="_blank"           
-            >
-              <p>
-                Level 1 SBG Tallaght,<br />
+				</ul>
+				<div class="btn-sign-up">
+                <a href="sign-up.html" class="btn btn-lg btn-memberships btn-memberships--purple">Select Plan</a>
+                </div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 memberships-plan">
+				<div class="text-center memberships-plan-box">
+					<h3>Bronze Plan</h3>
+					<p class="memberships-price">€107 <span>per month</span></p>
+					<p>Perfect for busy people looking to stay fit!</p>
+				</div>
+				<ul class="memberships-list">
+					<li><i class="fa fa-check"></i>Access to 2 Private Sessions per week</li>
+					<li><i class="fa fa-check"></i>Private Group Training</li>
+					<li><i class="fa fa-check"></i>Nutritional Advice</li>
+					<li><i class="fa fa-check"></i>Progress Tracking</li>
+
+				</ul>
+				<div class="btn-sign-up">
+                <a href="sign-up.html" class="btn btn-lg btn-memberships btn-memberships--purple">Select Plan</a>
+                </div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 memberships-plan">
+				<div class="text-center memberships-plan-box">
+					<h3>Boxersise Class</h3>
+					<p class="memberships-price">€39 <span>per month</span></p>
+					<p>Release Your Aggression!</p>
+				</div>
+				<ul class="memberships-list">
+					<li><i class="fa fa-check"></i>Private Group Training Once a week</li>
+					<li><i class="fa fa-check"></i>Improve Motor Skills, Balance, Reaction Time and Agility</li>
+					<li><i class="fa fa-check"></i>Fantastic Classes for People who Suffer with Anixety</li>
+					<li><i class="fa fa-check"></i>Improve Confidence</li>
+
+				</ul>
+				<div class="btn-sign-up">
+                <a href="sign-up.html" class="btn btn-lg btn-memberships btn-memberships--purple">Select Plan</a>
+                </div>
+			</div>
+		</div>
+		
+		<div class="row memberships-box">
+			<div class="col-12 col-sm-6 col-lg-3 memberships-plan">
+				<div class="text-center memberships-plan-box">
+					<h3>Beginners Plan</h3>
+					<p class="memberships-price">€150 <span>for 6 weeks</span></p>
+					<p>Perfect for people just starting off or returning to fitness!</p>
+				</div>
+				<ul class="memberships-list">
+					<li><i class="fa fa-check"></i>3 Classes Per Week</li>
+					<li><i class="fa fa-check"></i>Private Beginners Group Training</li>
+					<li><i class="fa fa-check"></i>Nutritional Advice</li>
+					<li><i class="fa fa-check"></i>Diet Plan</li>
+					<li><i class="fa fa-check"></i>Improve Posture</li>
+					<li><i class="fa fa-check"></i>Progress Tracking</li>
+
+				</ul>
+				<div class="btn-sign-up">
+                <a href="sign-up.html" class="btn btn-lg btn-memberships btn-memberships--purple">Select Plan</a>
+                </div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 memberships-plan">
+				<div class="text-center memberships-plan-box">
+					<h3>Fit Moms Plan</h3>
+					<p class="memberships-price">€39 <span>per month</span></p>
+					<p>Helping Mothers Stay In Shape!</p>
+				</div>
+				<ul class="memberships-list">
+					<li><i class="fa fa-check"></i>2 Hours per week</li>
+					<li><i class="fa fa-check"></i>Private Group Training with other Mothers</li>
+					<li><i class="fa fa-check"></i>Home Workouts For When You can't make the gym</li>
+					<li><i class="fa fa-check"></i>Nutritional Advice</li>
+
+				</ul>
+				<div class="btn-sign-up">
+                <a href="sign-up.html" class="btn btn-lg btn-memberships btn-memberships--purple">Select Plan</a>
+                </div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 memberships-plan">
+				<div class="text-center memberships-plan-box">
+					<h3>Kids / Teens Plan</h3>
+					<p class="memberships-price">€59 <span>per month</span></p>
+					<p>Get Your Kids and Teens Moving!</p>
+				</div>
+				<ul class="memberships-list">
+					<li><i class="fa fa-check"></i>2 Sessions per week</li>
+					<li><i class="fa fa-check"></i>Improve Social Skills</li>
+					<li><i class="fa fa-check"></i>Nutritional Advice</li>
+					<li><i class="fa fa-check"></i>Get Them Moving and Fit</li>
+					<li><i class="fa fa-check"></i>Build their Confidence</li>
+					<li><i class="fa fa-check"></i>Boosts energy level</li>
+					<li><i class="fa fa-check"></i>Releases tension</li>
+				</ul>
+				<button class="btn btn-lg btn-memberships btn-memberships--purple">Select Plan</button>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 memberships-plan">
+				<div class="text-center memberships-plan-box">
+					<h3>Movement Plan</h3>
+					<p class="memberships-price">€69 <span>per month</span></p>
+					<p>Strengthening the body to perform better movements!</p>
+				</div>
+				<ul class="memberships-list">
+					<li><i class="fa fa-check"></i>2 Classes per Week</li>
+					<li><i class="fa fa-check"></i>Home Workouts Provided</li>
+					<li><i class="fa fa-check"></i>Strenghtens Your Core</li>
+					<li><i class="fa fa-check"></i>Stronger prevention, quicker recovery</li>
+					<li><i class="fa fa-check"></i>Increase Flexibility and Mobility</li>
+				</ul>
+				<div class="btn-sign-up">
+                <a href="sign-up.html" class="btn btn-lg btn-memberships btn-memberships--purple">Select Plan</a>
+                </div>
+			</div>
+		</div>
+    </div>
+	</section>
+
+	<!--Team Memberships-->
+
+	<section class="container-fluid container-team-offers"></section>
+
+	<section></section>
+
+	<!--Footer-->
+	<footer>
+		<div class="container-fluid footer-color">
+			<div class="row">
+				<div class="col-md-4">
+					<ul class="footer-nav uppercase">
+						<li>
+							<a class="footer-nav-color" href="index.html"><i class="fa fa-home"></i></a>
+						</li>
+						<li>
+							<a class="footer-nav-color" href="service.html"><i class="fa fa-table"></i></a>
+						</li>
+						<li>
+							<a class="footer-nav-color" href="memberships.html"><i class="fa fa-address-card"></i></a>
+						</li>
+						<li>
+							<a class="footer-nav-color" href="contact.html"><i class="fa fa-envelope"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<ul class="social-links">
+						<li>
+							<a href="https://www.facebook.com/sccoachesdublin/"
+								target="_blank"><i class="fa fa-facebook-f"></i></a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/sccoaches/"
+								target="_blank"><i class="fa fa-instagram"></i></a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/watch?v=AG8d9fFdRJ0"
+								target="_blank"><i class="fa fa-youtube"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4 footer-location">
+					<h5 class="uppercase">Where to find us</h5>
+					<a href="https://www.google.com/maps/dir//Level+1+SBG+Tallaght,+Glen+Abbey+Complex,+Belgard+Road,+Cookstown,+Dublin+24+%E2%80%8B%E2%80%8B/@53.2850563,-6.4301569,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x486774b2987a9509:0x11b28940d8d4c0dd!2m2!1d-6.3711265!2d53.2957625"
+						target="_blank">
+						<p>
+							Level 1 SBG Tallaght,<br />
                 Glen Abbey Complex, <br />Belgard Rd, Cookstown, <br />Dublin 24
                 ​
-              </p></a
-            >
-          </div>
-        </div>
-      </div>
-    </footer>
+              </p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+	</script>
+</body>
+
 </html>
