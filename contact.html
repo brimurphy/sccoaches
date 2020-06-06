@@ -24,7 +24,7 @@
   </head>
 
   <body>
-  <!--Header-->
+    <!--Header-->
     <header>
       <div class="container-fluid container-navbar">
         <!--Logo-->
@@ -57,8 +57,8 @@
             <ul class="navbar-nav mt-2 mt-lg-0 navbar-menu uppercase">
               <li class="nav-item active">
                 <a class="nav-link nav-link-color" href="index.html"
-                  >Home <span class="sr-only"></span></a
-                >
+                  >Home <span class="sr-only"></span
+                ></a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link nav-link-color" href="service.html"
@@ -72,8 +72,18 @@
               </li>
               <li class="nav-item active">
                 <a class="nav-link nav-link-color nav-active" href="contact.html"
-                  >Contact <span class="sr-only">(current)</span
+                  >Contact <span class="sr-only"></span
                 ></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link nav-link-color" href="sign-up.html"
+                  >Sign Up <span class="sr-only"></span
+                ></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link nav-link-color" href="sign-in.html"
+                  >Login <span class="sr-only">(current)</span></a
+                >
               </li>
             </ul>
           </div>
@@ -81,12 +91,54 @@
       </div>
     </header>
 
-    <section>contact
+    <!--Contact Form-->
+
+    <section class="container-fluid container-form container-form--green">
+      <div class="row">
+        <div class="col contact-form-box">
+          <h2 class="section-header contact-header uppercase text-center">
+            Have a question for us?
+          </h2>
+          <hr class="block-divider block-divider--purple">
+          <h3 class="uppercase text-center">We'd love to hear from you!</h3>
+          <div class="contact-form uppercase">
+            <form action="https://formdump.codeinstitute.net" method="post">
+              <label for="fullname">Name:</label>
+              <input
+                type="text"
+                name="name"
+                id="fullname"
+                class="form-control contact-form-input"
+                required
+              />
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="emailaddress"
+                class="form-control contact-form-input"
+                required
+              />
+              <label for="contactmessage">How can we Help?</label>
+              <textarea
+                rows="5"
+                name="contactmessage"
+                id="contactmessage"
+                class="form-control contact-form-input"
+                required
+              ></textarea>
+              <div class="btn-contact-form">
+              <input
+                type="submit"
+                class="btn btn-contact-form--purple"
+                value="Submit"
+              />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
-
-    <section></section>
-
-    <section></section>
 
     <!--Footer-->
     <footer>
@@ -132,7 +184,7 @@
               </li>
               <li>
                 <a
-                  href="https://www.youtube.com/watch?v=AG8d9fFdRJ0"
+                  href="https://www.youtube.com/channel/UC1KKDqt6wETQVQ7ziP7-XeQ"
                   target="_blank"
                   ><i class="fa fa-youtube"></i
                 ></a>

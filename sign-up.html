@@ -56,8 +56,8 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mt-2 mt-lg-0 navbar-menu uppercase">
               <li class="nav-item active">
-                <a class="nav-link nav-link-color nav-active" href="index.html"
-                  >Home <span class="sr-only">(current)</span></a
+                <a class="nav-link nav-link-color" href="index.html"
+                  >Home <span class="sr-only"></span></a
                 >
               </li>
               <li class="nav-item active">
@@ -75,18 +75,84 @@
                   >Contact <span class="sr-only"></span
                 ></a>
               </li>
+              <li class="nav-item active">
+                <a class="nav-link nav-link-color nav-active" href="sign-up.html"
+                  >Sign Up <span class="sr-only">(current)</span
+                ></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link nav-link-color" href="sign-in.html"
+                  >Login <span class="sr-only"></span
+                ></a>
+              </li>
             </ul>
           </div>
         </nav>
       </div>
     </header>
 
-    <section>
+     <section class="container-fluid container-form container-form--green">
+      <div class="row">
+        <div class="col sign-in-up-box">
+          <h3 class="section-header sign-in-up-header uppercase text-center">
+            Want to become a member?
+          </h3>
+          <hr class="block-divider block-divider--purple">
+          <h4 class="uppercase text-center">Already a Member?<a class="sign-in-link" href="sign-in.html">Sign In!</a></h4>
+          <div class="sign-in-up-form uppercase">
+            <form action="https://formdump.codeinstitute.net" method="post">
+              <label for="username">Username:</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                class="form-control sign-in-up-input"
+                required
+              />
+              <label for="email-sign-up">Email:</label>
+              <input
+                type="email"
+                name="email-sign-up"
+                id="email-sign-up"
+                class="form-control sign-in-up-input"
+                required
+              />
+              <label for="emailconfirm">Confirm Email:</label>
+              <input
+                type="email"
+                name="emailconfirm"
+                id="emailconfirm"
+                class="form-control sign-in-up-input"
+                required
+              />
+              <label for="password-sign-up">Password:</label>
+              <input
+                type="password"
+                name="password-sign-up"
+                id="password-sign-up"
+                class="form-control sign-in-up-input"
+                required
+              />
+              <label for="passwordconfirm">Confirm Password:</label>
+              <input
+                type="password"
+                name="passwordconfirm"
+                id="passwordconfirm"
+                class="form-control sign-in-up-input"
+                required
+              />
+              <div class="btn-sign-in-up">
+                <input
+                  type="submit"
+                  class="btn btn-sign-in-up--purple"
+                  value="Sign Up"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
-
-    <section></section>
-
-    <section></section>
 
     <!--Footer-->
     <footer>
@@ -132,7 +198,7 @@
               </li>
               <li>
                 <a
-                  href="https://www.youtube.com/watch?v=AG8d9fFdRJ0"
+                  href="https://www.youtube.com/channel/UC1KKDqt6wETQVQ7ziP7-XeQ"
                   target="_blank"
                   ><i class="fa fa-youtube"></i
                 ></a>
