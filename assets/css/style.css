@@ -687,6 +687,13 @@ ul {
   align-items: center;
 }
 
+.contact-form,
+.sign-in-up-form {
+  width: 50%;
+  margin-top: 3%;
+  margin-left: 25%;
+}
+
 /*-- Autofill box not following style rules, Solution by Fareed Alnamrouti, transition solution by Nathan White on Stack Overflow --*/
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -698,17 +705,12 @@ input:-webkit-autofill {
   -webkit-text-fill-color: #2b4f22 !important;
   transition: all 0s 50000s;
 }
+
 /*-----------------------------------contact form */
 
 .contact-header,
 .contact-form-box h3 {
   color: #9670ab;
-}
-
-.contact-form {
-  margin-left: 17%;
-  margin-top: 2%;
-  width: 65%;
 }
 
 /*-----------------------------------sign in/up */
@@ -733,12 +735,6 @@ input:-webkit-autofill {
 .sign-up-link:active {
   color: #7f44a0;
   text-decoration: none;
-}
-
-.sign-in-up-form {
-  width: 50%;
-  margin-top: 3%;
-  margin-left: 25%;
 }
 
 /*-----------------------------------footer */
