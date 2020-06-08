@@ -1,39 +1,89 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+![S&C Logo](../img/scc-logo-light.png)
 
-Welcome Brian Murphy,
+# S&C Coaches
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+=============
 
-## Gitpod Reminders
+Website for S&C Coaches to help attract new members and to offer current members access to booking classes and times of classes for their personal training business.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+_Educational purposes only._
 
-`python3 -m http.server`
+## Motivation
 
-A blue button should appear to click: *Make Public*,
+---
 
-Another blue button should appear to click: *Open Browser*.
+My goal for the website was to make a welcoming website which shows the warmth friendliness of the coaches. I wanted a clean and attractive layout that was easy navigate. Current clients don't even realise they have a website and they use different Apps for their clients to _book classes, pay memberships and to send personalised workouts_. My goal will be to have all needs met with the one website, eventually with a members area which would be accessable by members
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+# UX
 
-A blue button should appear to click: *Make Public*,
+=====
 
-Another blue button should appear to click: *Open Browser*.
+## Who is this website aimed at?
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+---
 
-## Updates Since The Instructional Video
+The website is directed towards exsisting clients and potential new clients, giving them access to booking classes, changing their membership plans and seeing what else is provided by the coaches.
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+## Description
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+---
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+When you access the website you will be greeted with a photo of current members and the two coaches **Sabrina and Lukazs**. With kids in the image to show they can accomodate families that can't leave the kids at home.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+> The Navbar has been designed with the colors of the logo and vests on the ladies in mind.
+>
+> The Footer has links to their social media pages and a google maps link to help locating the gym. It also contains a small navagation menu made with some icons.
+>
+> The Navbar and Footer are replicated on each page.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![Homepage screen shot]()
 
---------
+The main job of the home page is to show everybody is welcome, from beginners to the more advanced client. A free week trial offers a no strings attached deal so new clients can try the classes before any financal commitment is made.
+With the next section giving an introduction into who S&C Coaches are followed by a small comment from each coach.
+The final bit of the homepage is a client review section with reviews from current clients.
 
-Happy coding!
+![Services screen shot]()
+
+The services page gives an overview of what the team has to offer. Both in and outside of the gym.
+In the classes section each class has a drop down box for potential new clients to get an overview of what they can expect from the different classes.
+The outside the gym section focus on what they do away from the weights and exercise machines. They are all focused on showing that **they care about their clients and not just their appearence.**
+
+![Memberships screen shot]()
+
+This is the business page were clients and potental clients can select a plan that suits them the most.
+I also plan to add a section for preseason bootcamps for sports clubs and summer bootcamps.
+
+![Contact screen shot]()
+
+I've gone for a simple contact form which members and non members can use to contact the coaches about any query or question they might have.
+
+![Sign In and Sign Up screen shot]()
+
+These pages will allow new clients join the members area of the website and members to access the members area of the website.
+
+## User Stories
+
+## Features / Future features
+
+## Wireframes
+
+## Technologies Used
+
+html/css/github/gitpod/bootstrap/google fonts/font awesome
+
+## Testing
+
+manual testing, code validation
+
+add changes to the page
+colors/fonts/layout
+
+## Version Control
+
+## Content / Acknowledgements
+
+## License & Copyright
+
+---
+
+© Brian Murphy and S&C Coaches
