@@ -223,8 +223,8 @@ ul {
 .block-divider {
   margin: 15px auto;
   width: 10%;
-  height: 5px;
-  border-radius: 50%;
+  height: 4px;
+  border-radius: 50px;
 }
 
 .block-divider-long {
@@ -252,7 +252,7 @@ ul {
 
 .jumbotron {
   background-color: #9670ab5b;
-  border-radius: 10%;
+  border-radius: 20px;
 }
 
 .jumbotron-callout,
@@ -420,7 +420,7 @@ ul {
 .services-image {
   width: 200px;
   height: 200px;
-  border-radius: 20%;
+  border-radius: 20px;
   margin: 5%;
 }
 
@@ -434,7 +434,7 @@ ul {
   color: #beb7c2;
   background: 1px solid #2b4f22;
   background-color: #2b4f22;
-  border-radius: 10%;
+  border-radius: 10px;
 }
 
 .btn-services:hover,
@@ -459,9 +459,9 @@ ul {
 }
 
 .outside-img img {
-  width: 100%;
-  max-height: 90%;
-  border-radius: 10%;
+  
+  
+  border-radius: 20px;
 }
 
 .outside-health img {
@@ -523,7 +523,7 @@ ul {
   margin-bottom: 5%;
   margin-left: 3%;
   border: 1px solid #9670ab;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #dbd2e0;
 }
 
@@ -570,7 +570,7 @@ ul {
 .btn-memberships {
   position: absolute;
   bottom: 5px;
-  border-radius: 10%;
+  border-radius: 10px;
 }
 /* How to center a button W3Schools */
 .btn-sign-up {
