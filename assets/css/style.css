@@ -54,7 +54,8 @@ body {
 .container-reviews,
 .container-services,
 .container-outside,
-.container-memberships {
+.container-memberships,
+.container-timetable {
   height: 100%;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -77,10 +78,25 @@ body {
 .container-memberships {
 }
 
+.container-timetable {
+}
+
 .container-form {
   height: 100vh;
   padding-top: 48px;
   padding-bottom: 48px;
+}
+
+@media only screen and (max-width: 991px) {
+  .container-form {
+    height: 90vh;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container-form {
+    height: 80vh;
+  }
 }
 
 /*-----------------------------------colors */
@@ -100,6 +116,10 @@ body {
 
 .footer-nav-color {
   color: #2b4f22;
+}
+
+.footer-nav-color:hover {
+  color: #beb7c2;
 }
 
 .container-our-story--purple {
@@ -127,7 +147,9 @@ body {
 }
 
 /*-----------------------------------Buttons */
-
+.btn {
+  transition: all 0.5s ease;
+}
 /* Button focus issued solved with help from Jonathon Munz */
 .btn:focus {
   box-shadow: none;
@@ -164,7 +186,7 @@ body {
 .btn-contact-form--purple:hover,
 .btn-contact-form--purple:active {
   color: #9670ab;
-  background-color: #beb7c2;
+  background-color: #dbd2e0;
   border: 1px solid #9670ab;
 }
 
@@ -175,7 +197,7 @@ body {
 
 .btn-sign-in-up--purple:hover {
   color: #9670ab;
-  background-color: #beb7c2;
+  background-color: #dbd2e0;
   border: 1px solid #9670ab;
 }
 
@@ -279,7 +301,7 @@ ul {
 
 .navbar-menu {
   font-family: "Montserrat", sans-serif;
-  font-size: 130%;
+  font-size: 110%;
   letter-spacing: 2px;
   margin-left: auto;
 }
@@ -287,6 +309,9 @@ ul {
 .navbar-menu li {
   font-weight: 600;
   margin-right: 30px;
+}
+.navbar-menu a {
+  transition: 0.3s;
 }
 
 .navbar-menu a:hover,
@@ -303,6 +328,13 @@ ul {
   font-size: 2em;
   color: #2b4f22;
 }
+
+@media only screen and (max-width: 1199px) {
+  .navbar-menu {
+    font-size: 85%;
+    margin-right: 20px;
+  }
+}
 /*-----------------------------------callout */
 
 .callout-header {
@@ -314,16 +346,16 @@ ul {
 /*-----------------------------------our story */
 
 .our-story-header {
-  color: #2b4f22;
+  color: #dbd2e0;
 }
 
 .our-story-paragraph {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 400;
-  line-height: 1.4;
-  letter-spacing: 1.3px;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
   margin: 10px 20px;
-  color: #dbd2e0;
+  color: #e8e8e8;
 }
 
 .our-story-img {
@@ -336,6 +368,25 @@ ul {
 
 .our-story-img img {
   width: 100%;
+  height: auto;
+
+  /* www.w3schools.com "How To Zoom on Hover"  */
+  transition: transform .2s;
+}
+
+.our-story-img img:hover {
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05); 
+  transform: scale(1.05); 
+}
+
+@media only screen and (max-width: 1199px) {
+  .our-story-paragraph {
+    font-size: 1.1rem;
+  }
+  .our-story-img {
+    column-count: 3;
+  }
 }
 /*-----------------------------------coach */
 
@@ -425,13 +476,13 @@ ul {
 }
 
 .bg-services-card {
-  color: #2b4f22;
+  color: #e8e8e8;
   background-color: transparent;
   border: none;
 }
 
 .btn-services {
-  color: #beb7c2;
+  color: #cecece;
   background: 1px solid #2b4f22;
   background-color: #2b4f22;
   border-radius: 10px;
@@ -459,8 +510,6 @@ ul {
 }
 
 .outside-img img {
-  
-  
   border-radius: 20px;
 }
 
@@ -631,6 +680,14 @@ ul {
     float: center;
   }
 }
+
+/*-----------------------------------timetable */
+
+.timetable-header {
+    color: #2b4f22;
+}
+
+
 /*-----------------------------------form */
 
 .contact-header,
@@ -640,6 +697,7 @@ ul {
 
 .contact-form-box h3,
 .sign-in-up-box h4 {
+  font-size: 1.5rem;
   margin-top: 3%;
   letter-spacing: 1.2px;
 }
@@ -654,13 +712,13 @@ ul {
 
 .contact-form form,
 .sign-in-up-form form {
-  padding: 1%;
+  padding: 0 1% 1% 1%;
 }
 
-.contact-form label 
+.contact-form label,
 .sign-in-up-form label {
   margin: 0;
-  padding: 3px 5px;
+  padding: 1%;
   line-height: 135%;
   letter-spacing: 1.2px;
 }
@@ -706,11 +764,67 @@ input:-webkit-autofill {
   transition: all 0s 50000s;
 }
 
+@media only screen and (max-width: 1199px) {
+  .contact-form,
+  .sign-in-up-form {
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .contact-form-box h3,
+  .sign-in-up-box h4 {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .contact-form,
+  .sign-in-up-form {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .contact-header,
+  .sign-in-up-header {
+    font-size: 2.5em;
+  }
+
+  .contact-form-box h3,
+  .sign-in-up-box h4 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-header,
+  .sign-in-up-header {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .contact-form,
+  .sign-in-up-form {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .contact-header,
+  .sign-in-up-header {
+    font-size: 1.5em;
+  }
+
+  .contact-form-box h3,
+  .sign-in-up-box h4 {
+    font-size: 0.9rem;
+  }
+}
+
 /*-----------------------------------contact form */
 
 .contact-header,
 .contact-form-box h3 {
-  color: #9670ab;
+  color: #dbd2e0;
 }
 
 /*-----------------------------------sign in/up */
@@ -728,6 +842,7 @@ input:-webkit-autofill {
 .sign-up-link {
   padding-left: 1%;
   color: #9670ab;
+  transition: 0.3s ease;
 }
 .sign-in-link:hover,
 .sign-in-link:active,
@@ -740,13 +855,12 @@ input:-webkit-autofill {
 /*-----------------------------------footer */
 
 footer {
-  height: 150px;
+  height: 100px;
 }
 
 .social-links,
 .footer-nav {
   text-align: center;
-  margin-top: 10px;
   list-style: none;
 }
 
@@ -756,27 +870,36 @@ footer {
 }
 
 .social-links i {
-  font-size: 160%;
+  font-size: 180%;
   color: #2b4f22;
-  margin: 0 auto;
-  padding: 8%;
+  margin: 50px auto;
+  padding-left: 1rem;
+  transition: 0.5s;
 }
 
-.social-links i:hover,
-.footer-nav i:hover {
+.social-links i:hover {
   color: #beb7c2;
+}
+
+.footer-nav {
+  font-size: 0.8rem;
+  letter-spacing: 1.2px;
+  line-height: 1.5px;
+  margin-top: 65px;
+}
+
+.footer-nav a {
+  border-right: 1px solid #2b4f22;
+  padding: 0 8px;
+  transition: 0.5s;
+}
+
+.footer-nav a:hover {
+  text-decoration: none;
 }
 
 .footer-nav li {
   display: inline;
-  margin-right: 20px;
-}
-
-.footer-nav i {
-  font-size: 160%;
-  margin: 0 auto;
-  margin-top: 10px;
-  padding: 20px;
 }
 
 .footer-location {
@@ -786,7 +909,7 @@ footer {
 
 .footer-location h5,
 .footer-location p {
-  margin-top: 25px;
+  margin-top: 0.5rem;
   letter-spacing: 2px;
 }
 .footer-location h5 {
@@ -801,9 +924,47 @@ footer {
 
 .footer-location a {
   color: #2b4f22;
+  transition: 0.5s;
 }
 
 .footer-location a:hover {
   color: #beb7c2;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 1199px) {
+  .footer-nav {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    line-height: 1.2px;
+  }
+
+  .footer-nav a {
+    padding: 0 5px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .footer-nav {
+    font-size: 0.8rem;
+    letter-spacing: 1.2px;
+    line-height: 1.5px;
+    margin-top: 20px;
+  }
+
+  .footer-nav a {
+    padding: 0 8px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .footer-nav {
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+    line-height: 1.2px;
+  }
+
+  .footer-nav a {
+    padding: 0 5px;
+  }
 }
