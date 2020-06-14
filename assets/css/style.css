@@ -16,7 +16,7 @@ bfbfbe (green hover color)
 #DBD2E0 (grey)nav
 
 */
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,300;1,400&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400&family=Satisfy&display=swap");
 
 * {
   margin: 0;
@@ -130,8 +130,8 @@ body {
   background-color: #2b4f22;
 }
 
-.container-services--purple {
-  background-color: #9670ab;
+.container-services--green {
+  background-color: #2b4f22;
 }
 
 .container-outside--green {
@@ -371,13 +371,13 @@ ul {
   height: auto;
 
   /* www.w3schools.com "How To Zoom on Hover"  */
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .our-story-img img:hover {
   -ms-transform: scale(1.05);
-  -webkit-transform: scale(1.05); 
-  transform: scale(1.05); 
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 @media only screen and (max-width: 1199px) {
@@ -458,7 +458,7 @@ ul {
 
 .services-header,
 .services-header-classes {
-  color: #2b4f22;
+  color: #dbd2e0;
 }
 
 .services-header-classes {
@@ -476,15 +476,15 @@ ul {
 }
 
 .bg-services-card {
-  color: #e8e8e8;
+  color: #cecece;
   background-color: transparent;
   border: none;
 }
 
 .btn-services {
   color: #cecece;
-  background: 1px solid #2b4f22;
-  background-color: #2b4f22;
+  background: 1px solid #9670ab;
+  background-color: #9670ab;
   border-radius: 10px;
 }
 
@@ -682,11 +682,79 @@ ul {
 }
 
 /*-----------------------------------timetable */
-
-.timetable-header {
-    color: #2b4f22;
+.timetable {
+  color: #2b4f22;
+  width: 80%;
+  margin-top: 24px;
+  margin-left: 10%;
 }
 
+.timetable-header {
+  color: #2b4f22;
+}
+
+.timetable th,
+.timetable td {
+  border: 1px solid #2b4f22;
+  vertical-align: middle;
+}
+
+.timetable th {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  border: 1px solid #2b4f22;
+  border-right: 2px solid #2b4f22;
+}
+
+.timetable td {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.timetable thead th {
+  border-bottom: 2px solid #2b4f22;
+}
+
+@media only screen and (max-width: 991px) {
+  .timetable {
+    margin: 0 auto;
+  }
+
+  .timetable th {
+    font-size: 0.9rem;
+  }
+
+  .timetable td {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .timetable th {
+    font-size: 0.7rem;
+  }
+
+  .timetable td {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .timetable th {
+    font-size: 0.6rem;
+    font-weight: 600;
+  }
+
+  .timetable td {
+    font-size: 0.5rem;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-width: 444px) {
+  .container-timetable {
+    display: none;
+  }
+}
 
 /*-----------------------------------form */
 

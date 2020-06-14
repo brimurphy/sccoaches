@@ -37,7 +37,13 @@ The final bit of the homepage is a client review section with reviews from curre
 
 The services page gives an overview of what the team has to offer. Both in and outside of the gym.
 In the classes section each class has a drop down box for potential new clients to get an overview of what they can expect from the different classes.
-The outside the gym section focus on what they do away from the weights and exercise machines. They are all focused on showing that **they care about their clients and not just their appearence.**
+The outside the gym section focus on what they do away from the weights and exercise machines. They are all focused on showing that **they care about their clients mental health and not just their physical health.**
+
+**Update**
+
+I have added a timetable section to the services page and moved the outside the gym section to the memberships as I felt this  flowed better.
+Services colors changed as I felt the new color scheme works better on the page espically in mobile when the new timetable is hidden.
+
 
 ![Memberships page](assets/images/readme-img/memberships.png)
 
@@ -67,6 +73,7 @@ These pages will allow new clients join the members area of the website and memb
 - As a user I want to contact the coaches if I have any inquiries.
 - As a user I want to find out what classes are available.
 - As a user I want to become a member.
+- As a user I want to find out when a class is on.
 
 ## Wireframes
 

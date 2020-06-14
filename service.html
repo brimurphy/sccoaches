@@ -6,6 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
@@ -31,6 +50,7 @@
 
   <body>
     <!--Header-->
+
     <header>
       <div class="container-fluid container-navbar">
         <!--Logo-->
@@ -99,8 +119,10 @@
       </div>
     </header>
 
+    <!--Services-->
+
     <section
-      class="container-fluid container-services container-services--purple"
+      class="container-fluid container-services container-services--green"
     >
       <div class="row">
         <div class="col">
@@ -109,7 +131,7 @@
           </h2>
         </div>
       </div>
-      <hr class="block-divider block-divider--green" />
+      <hr class="block-divider block-divider--grey" />
       <div class="row">
         <div class="col-12 col-sm-6 col-lg-3 text-center">
           <img
@@ -339,93 +361,88 @@
       </div>
     </section>
 
-    <section class="container-fluid container-outside container-outside--green">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-header outside-header uppercase">
-            Outside the gym
-          </h2>
-          <hr class="block-divider block-divider--green" />
-        </div>
-      </div>
+    <!--Timetable-->
 
-      <div class="row outside-activity outside-health">
-        <div class="col-12 col-xl-7 text-center outside-img">
-          <img
-            src="assets/images/service-img/health&wellness.jpg"
-            alt="Health and Wellness"
-          />
-        </div>
-        <div class="col-12 col-xl-5 text-center outside-info">
-          <h3>Health and Wellness Events</h3>
-          <p>
-            Here at S&C Coaches we aren't just about your physical health we
-            also try to help with your mental health. With speakers from Health
-            and Wellness sectors in Ireland. The Event will include:
-          </p>
-          <ul>
-            <li>Importance of Nutrition</li>
-            <li>Work related stress</li>
-            <li>Meditation Workshop</li>
-            <li>Physical and Mental Balance</li>
-            <li>Questions and Answers</li>
-            <li>Goodie Bags</li>
-            <li>Healthy Lunch Provided</li>
-          </ul>
+    <section class="container-fluid container-timetable">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="uppercase text-center section-header timetable-header">
+              Timetable
+            </h2>
+            <hr class="block-divider block-divider--green" />
+          </div>
         </div>
       </div>
-      <hr
-        class="block-divider block-divider-long block-divider--green d-none d-xl-block"
-      />
-      <div class="row outside-activity outside-excursions">
-        <div class="col-12 col-xl-7 text-center outside-img">
-          <img
-            src="assets/images/service-img/excursion.jpg"
-            alt="Challenges and Excursions"
-          />
-        </div>
-        <div class="col-12 col-xl-5 text-center outside-info">
-          <h3>Challenges and Excursions</h3>
-          <p>
-            We orgainise team challenges and orgainise family excursions which
-            are open to members and none members alike. Here's some we have done
-            in the last 12 months:
-          </p>
-          <ul>
-            <li>Hell & Back</li>
-            <li>Tough Mudder</li>
-            <li>Hike to Glendalough</li>
-            <li>Bray to Greystones walk</li>
-            <li>Rock 'n' Roll Half Marathon</li>
-            <li>Ticknock Walk</li>
-            <li>The Forty Foot</li>
-          </ul>
-        </div>
-      </div>
-      <hr
-        class="block-divider block-divider-long block-divider--green d-none d-xl-block"
-      />
-      <div class="row outside-activity outside-nights-out">
-        <div class="col-12 col-xl-7 outside-img text-center">
-          <img src="assets/images/service-img/night-out.jpg" alt="Team Night Out" />
-        </div>
-        <div
-          class="col-12 col-xl-5 text-center outside-info outside-info-nights"
-        >
-          <h3>Team Nights Out</h3>
-          <p>
-            We're not all work and no play! Sometimes we like to swap the gym
-            gear for the glad rags and put on our danciing shoes.
-          </p>
-          <ul>
-            <li>Christmas Nights Out</li>
-            <li>Summer BBQ</li>
-            <li>Oktoberfest Dublin</li>
-            <li>BYOB Bowling</li>
-            <li>Karaoke</li>
-          </ul>
-        </div>
-      </div>
+      <table class="table table-bordered text-center timetable">
+        <thead>
+          <tr>
+            <th scope="col">Time</th>
+            <th scope="col">Monday</th>
+            <th scope="col">Tuesday</th>
+            <th scope="col">Wednesday</th>
+            <th scope="col">Thursday</th>
+            <th scope="col">Friday</th>
+            <th scope="col">Saturday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">06:30</th>
+            <td>Morning Blast</td>
+            <td>Morning Blast</td>
+            <td>Morning Blast</td>
+            <td>Morning Blast</td>
+            <td>Morning Blast</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">09:30</th>
+            <td>Fit Moms</td>
+            <td></td>
+            <td>Fit Moms</td>
+            <td></td>
+            <td>Fit Moms</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">10:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Sweat Session</td>
+          </tr>
+          <tr>
+            <th scope="row">18:00</th>
+            <td>U16's Training</td>
+            <td>Lower Body Strenght & Mobility</td>
+            <td>U16's Training</td>
+            <td>Upper Body Strenght & Mobility</td>
+            <td>U16's Training</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">19:00</th>
+            <td>S&C Group Training</td>
+            <td>Upper Body Strenght & Mobility</td>
+            <td>S&C Group Training</td>
+            <td>Lower Body Strenght & Mobility</td>
+            <td>S&C Group Training</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">20:00</th>
+            <td>S&C Semi Private Class</td>
+            <td>Boxercise</td>
+            <td>S&C Semi Private Class</td>
+            <td>Boxercise</td>
+            <td>S&C Semi Private Class</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
     <!--Footer-->
@@ -435,20 +452,18 @@
           <div class="col-md-4">
             <ul class="footer-nav uppercase">
               <li>
-                <a class="footer-nav-color" href="index.html"
-                  >Home</a>
+                <a class="footer-nav-color" href="index.html">Home</a>
               </li>
               <li>
-                <a class="footer-nav-color" href="service.html"
-                  >Services</a>
+                <a class="footer-nav-color" href="service.html">Services</a>
               </li>
               <li>
                 <a class="footer-nav-color" href="memberships.html"
-                  >Memberships</a>
+                  >Memberships</a
+                >
               </li>
               <li>
-                <a class="footer-nav-color" href="contact.html"
-                  >Contact</a>
+                <a class="footer-nav-color" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
