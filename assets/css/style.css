@@ -1,21 +1,3 @@
-/*-----------------------------------colors
-
-#2B4F22 (green) color in logo
-bfbfbe (green hover color)
-#9670ab (purple)
-#bb2a1e (Red/Orange)
-#bbac1e (Yellow)
-#628457 (light Green)
-#730800 (Dark Red/Orange)
-#fff59c (Light Yellow)
-#8D98A7 (manatee)
-#A7754D (brownish)
-#DCCCBB (bone)
-#EAB464 (sunray)
-#77AF9C
-#DBD2E0 (grey)nav
-
-*/
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400&family=Satisfy&display=swap");
 
 * {
@@ -25,6 +7,7 @@ bfbfbe (green hover color)
 
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
   color: #171717;
   background-color: #dbd2e0;
 }
@@ -49,101 +32,62 @@ body {
   justify-content: center;
 }
 
-.container-our-story,
-.container-coaches,
-.container-reviews,
-.container-services,
-.container-outside,
-.container-memberships,
-.container-timetable {
+.container-section {
   height: 100%;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-.container-our-story {
-}
-
-.container-coaches {
-}
-
-.container-success {
-}
-
-.container-services {
-}
-
-.container-outside {
-}
-
-.container-memberships {
-}
-
-.container-timetable {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 
 .container-form {
-  height: 100vh;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  height: 100%;
+  padding-top: 3em;
+  padding-bottom: 12em;
 }
 
+/* Navbar Toggler stick to top of the screen from Bass Jobson reply on Stack Overflow */
 @media only screen and (max-width: 991px) {
-  .container-form {
-    height: 90vh;
+  .container-navbar-fixed {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
   }
-}
 
-@media only screen and (max-width: 767px) {
+  .container-services,
+  .container-memberships,
   .container-form {
-    height: 80vh;
+    margin-top: 6rem;
   }
 }
 
 /*-----------------------------------colors */
 
-.nav-link-color {
+.color-green {
   color: #2b4f22;
 }
 
-.navbar-toggler-color {
-  color: #2b4f22;
+.background-color-green {
+  background-color: #2b4f22;
 }
 
-.footer-color {
-  background-color: #9670ab;
-  color: #2b4f22;
+.color-purple {
+  color: #9670ab;
 }
 
-.footer-nav-color {
-  color: #2b4f22;
-}
-
-.footer-nav-color:hover {
-  color: #beb7c2;
-}
-
-.container-our-story--purple {
+.background-color-purple {
   background-color: #9670ab;
 }
 
-.container-reviews--green {
-  background-color: #2b4f22;
+.color-grey {
+  color: #dbd2e0;
 }
 
-.container-services--green {
-  background-color: #2b4f22;
+.background-color-grey {
+  background-color: #dbd2e0;
 }
 
-.container-outside--green {
-  color: #2b4f22;
-}
-
-.container-memberships--green {
-  background-color: #2b4f22;
-}
-
-.container-form--green {
-  background-color: #2b4f22;
+.color-grey-hover:hover {
+  color: #dbd2e0;
+  text-decoration: none;
 }
 
 /*-----------------------------------Buttons */
@@ -155,47 +99,24 @@ body {
   box-shadow: none;
 }
 
-.btn-callout--green {
+.btn-green {
   color: #dbd2e0;
   background-color: #2b4f22;
 }
 
-.btn-callout--green:hover,
-.btn-callout--green:active {
+.btn-green:hover,
+.btn-green:active {
   color: #2b4f22;
   background-color: #dbd2e0;
 }
 
-.btn-memberships--purple {
+.btn-purple {
   color: #dbd2e0;
   background-color: #9670ab;
 }
 
-.btn-memberships--purple:hover,
-.btn-memberships--purple:active {
-  color: #9670ab;
-  background-color: #dbd2e0;
-  border: 1px solid #9670ab;
-}
-
-.btn-contact-form--purple {
-  color: #dbd2e0;
-  background-color: #9670ab;
-}
-
-.btn-contact-form--purple:hover,
-.btn-contact-form--purple:active {
-  color: #9670ab;
-  background-color: #dbd2e0;
-  border: 1px solid #9670ab;
-}
-
-.btn-sign-in-up--purple {
-  color: #dbd2e0;
-  background-color: #9670ab;
-}
-
-.btn-sign-in-up--purple:hover {
+.btn-purple:hover,
+.btn-purple:active {
   color: #9670ab;
   background-color: #dbd2e0;
   border: 1px solid #9670ab;
@@ -253,17 +174,6 @@ ul {
   width: 50%;
 }
 
-.block-divider--green {
-  background-color: #2b4f22;
-}
-
-.block-divider--purple {
-  background-color: #9670ab;
-}
-
-.block-divider--grey {
-  background-color: #beb7c2;
-}
 /*-----------------------------------logo */
 
 .logo {
@@ -275,12 +185,6 @@ ul {
 .jumbotron {
   background-color: #9670ab5b;
   border-radius: 20px;
-}
-
-.jumbotron-callout,
-.jumbotron-header,
-.jumbotron-paragraph {
-  color: #f3f3f3;
 }
 
 .jumbotron-callout {
@@ -359,11 +263,14 @@ ul {
 }
 
 .our-story-img {
+  width: 100%;
   padding: 15px 25px;
-  clear: both;
-  line-height: 0;
-  column-count: 4;
+  columns: 4;
   column-gap: 0px;
+}
+
+.our-story-img div {
+  padding: 0;
 }
 
 .our-story-img img {
@@ -389,10 +296,6 @@ ul {
   }
 }
 /*-----------------------------------coach */
-
-.coach-header {
-  color: #2b4f22;
-}
 
 .coach {
   margin-top: 16px;
@@ -442,24 +345,14 @@ ul {
   margin: 10px;
 }
 
-.reviews-header {
-  color: #beb7c2;
-}
-
 /* Build Responsive Real World Websites with HTML5 and CSS3 with  Jonas Schmedtmann used to create review style */
 .blockquote-reviews {
-  color: #beb7c2;
   font-style: italic;
   padding: 2%;
   line-height: 145%;
 }
 
 /*-----------------------------------services */
-
-.services-header,
-.services-header-classes {
-  color: #dbd2e0;
-}
 
 .services-header-classes {
   font-family: "Montserrat", sans-serif;
@@ -482,9 +375,7 @@ ul {
 }
 
 .btn-services {
-  color: #cecece;
   background: 1px solid #9670ab;
-  background-color: #9670ab;
   border-radius: 10px;
 }
 
@@ -556,13 +447,16 @@ ul {
   }
 }
 
-/*-----------------------------------memberships */
-.memberships-box {
-  margin: 0 auto;
+@media only screen and (max-width: 444px) {
+  .outside-img img {
+    width: 250px;
+  }
 }
 
-.memberships-header {
-  color: #9670ab;
+/*-----------------------------------memberships */
+
+.memberships-box {
+  margin: 0 auto;
 }
 
 .memberships-plan {
@@ -574,9 +468,6 @@ ul {
   border: 1px solid #9670ab;
   border-radius: 10px;
   background-color: #dbd2e0;
-}
-
-.memberships-plan-box {
 }
 
 .memberships-plan-box h3 {
@@ -682,15 +573,11 @@ ul {
 }
 
 /*-----------------------------------timetable */
+
 .timetable {
-  color: #2b4f22;
   width: 80%;
   margin-top: 24px;
   margin-left: 10%;
-}
-
-.timetable-header {
-  color: #2b4f22;
 }
 
 .timetable th,
@@ -756,12 +643,7 @@ ul {
   }
 }
 
-/*-----------------------------------form */
-
-.contact-header,
-.sign-in-up-header {
-  margin-top: 4%;
-}
+/*-----------------------------------forms */
 
 .contact-form-box h3,
 .sign-in-up-box h4 {
@@ -772,8 +654,6 @@ ul {
 
 .contact-form,
 .sign-in-up-form {
-  color: #2b4f22;
-  background-color: #dbd2e0;
   border: 1px solid #9670ab;
   border-radius: 10px;
 }
@@ -795,8 +675,6 @@ ul {
 .contact-form-input:focus,
 .sign-in-up-input,
 .sign-in-up-input:focus {
-  color: #2b4f22;
-  background-color: #dbd2e0;
   border: 1px solid #9670ab;
 }
 
@@ -888,19 +766,7 @@ input:-webkit-autofill {
   }
 }
 
-/*-----------------------------------contact form */
-
-.contact-header,
-.contact-form-box h3 {
-  color: #dbd2e0;
-}
-
 /*-----------------------------------sign in/up */
-
-.sign-in-up-header,
-.sign-in-up-box h4 {
-  color: #dbd2e0;
-}
 
 .sign-in-up-box h4 {
   line-height: 145%;
@@ -923,7 +789,7 @@ input:-webkit-autofill {
 /*-----------------------------------footer */
 
 footer {
-  height: 100px;
+  height: 100%;
 }
 
 .social-links,
@@ -939,14 +805,9 @@ footer {
 
 .social-links i {
   font-size: 180%;
-  color: #2b4f22;
   margin: 50px auto;
   padding-left: 1rem;
   transition: 0.5s;
-}
-
-.social-links i:hover {
-  color: #beb7c2;
 }
 
 .footer-nav {
@@ -956,14 +817,14 @@ footer {
   margin-top: 65px;
 }
 
-.footer-nav a {
+.footer-nav li {
   border-right: 1px solid #2b4f22;
   padding: 0 8px;
   transition: 0.5s;
 }
 
-.footer-nav a:hover {
-  text-decoration: none;
+.footer-nav li:last-of-type {
+  border-right: none;
 }
 
 .footer-nav li {
@@ -982,57 +843,36 @@ footer {
 }
 .footer-location h5 {
   font-weight: 600;
-  font-size: 80%;
+  font-size: 0.8rem;
 }
 
 .footer-location p {
-  font-size: 70%;
+  font-size: 0.7rem;
   line-height: 20px;
 }
 
 .footer-location a {
-  color: #2b4f22;
   transition: 0.5s;
-}
-
-.footer-location a:hover {
-  color: #beb7c2;
-  text-decoration: none;
 }
 
 @media only screen and (max-width: 1199px) {
   .footer-nav {
-    font-size: 0.7rem;
-    letter-spacing: 1px;
-    line-height: 1.2px;
-  }
-
-  .footer-nav a {
-    padding: 0 5px;
+    font-size: 0.6rem;
   }
 }
 
 @media only screen and (max-width: 991px) {
   .footer-nav {
     font-size: 0.8rem;
-    letter-spacing: 1.2px;
-    line-height: 1.5px;
-    margin-top: 20px;
+    margin-top: 15px;
   }
-
-  .footer-nav a {
-    padding: 0 8px;
+  .footer-nav li {
+    padding: 0 4px;
   }
 }
 
 @media only screen and (max-width: 575px) {
   .footer-nav {
     font-size: 0.6rem;
-    letter-spacing: 1px;
-    line-height: 1.2px;
-  }
-
-  .footer-nav a {
-    padding: 0 5px;
   }
 }

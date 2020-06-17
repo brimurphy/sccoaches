@@ -51,7 +51,7 @@
   <body>
     <!--Header-->
     <header>
-      <div class="container-fluid container-navbar">
+      <div class="container-fluid container-navbar container-navbar-fixed">
         <!--Logo-->
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="index.html"
@@ -81,36 +81,34 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mt-2 mt-lg-0 navbar-menu uppercase">
               <li class="nav-item active">
-                <a class="nav-link nav-link-color" href="index.html"
+                <a class="nav-link color-green" href="index.html"
                   >Home <span class="sr-only"></span
                 ></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link nav-link-color" href="service.html"
+                <a class="nav-link color-green" href="service.html"
                   >Services <span class="sr-only"></span
                 ></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link nav-link-color" href="memberships.html"
+                <a class="nav-link color-green" href="memberships.html"
                   >Memberships <span class="sr-only"></span
                 ></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link nav-link-color" href="contact.html"
+                <a class="nav-link color-green" href="contact.html"
                   >Contact <span class="sr-only"></span
                 ></a>
               </li>
               <li class="nav-item active">
-                <a
-                  class="nav-link nav-link-color nav-active"
-                  href="sign-up.html"
-                  >Sign Up <span class="sr-only">(current)</span></a
-                >
+                <a class="nav-link color-green nav-active" href="sign-up.html"
+                  >Sign Up <span class="sr-only">(current)</span
+                ></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link nav-link-color" href="sign-in.html"
-                  >Login <span class="sr-only"></span
-                ></a>
+                <a class="nav-link color-green" href="sign-in.html"
+                  >Login <span class="sr-only"></span></a
+                >
               </li>
             </ul>
           </div>
@@ -118,26 +116,26 @@
       </div>
     </header>
 
-    <section class="container-fluid container-form container-form--green">
+    <section class="container-fluid container-form background-color-green">
       <div class="row">
         <div class="col sign-in-up-box">
-          <h3 class="section-header sign-in-up-header uppercase text-center">
+          <h3 class="section-header uppercase text-center color-grey">
             Want to become a member?
           </h3>
-          <hr class="block-divider block-divider--purple" />
-          <h4 class="uppercase text-center">
+          <div class="block-divider background-color-purple"></div>
+          <h4 class="uppercase text-center color-grey">
             Already a Member?<a class="sign-in-link" href="sign-in.html"
               >Sign In!</a
             >
           </h4>
-          <div class="sign-in-up-form uppercase">
+          <div class="sign-in-up-form uppercase color-green background-color-grey">
             <form action="https://formdump.codeinstitute.net" method="post">
               <label for="name">Name:</label>
               <input
                 type="text"
                 name="name"
                 id="name"
-                class="form-control sign-in-up-input"
+                class="form-control sign-in-up-input color-green background-color-grey"
                 required
               />
               <label for="email-sign-up">Email:</label>
@@ -145,7 +143,7 @@
                 type="email"
                 name="email-sign-up"
                 id="email-sign-up"
-                class="form-control sign-in-up-input"
+                class="form-control sign-in-up-input color-green background-color-grey"
                 required
               />
               <label for="emailconfirm">Confirm Email:</label>
@@ -153,7 +151,7 @@
                 type="email"
                 name="emailconfirm"
                 id="emailconfirm"
-                class="form-control sign-in-up-input"
+                class="form-control sign-in-up-input color-green background-color-grey"
                 required
               />
               <label for="password-sign-up">Password:</label>
@@ -161,7 +159,7 @@
                 type="password"
                 name="password-sign-up"
                 id="password-sign-up"
-                class="form-control sign-in-up-input"
+                class="form-control sign-in-up-input color-green background-color-grey"
                 required
               />
               <label for="passwordconfirm">Confirm Password:</label>
@@ -169,13 +167,13 @@
                 type="password"
                 name="passwordconfirm"
                 id="passwordconfirm"
-                class="form-control sign-in-up-input"
+                class="form-control sign-in-up-input color-green background-color-grey"
                 required
               />
               <div class="btn-sign-in-up">
                 <input
                   type="submit"
-                  class="btn btn-sign-in-up--purple"
+                  class="btn btn-purple"
                   value="Sign Up"
                 />
               </div>
@@ -186,63 +184,67 @@
     </section>
 
     <!--Footer-->
-    <footer>
-      <div class="container-fluid footer-color">
-        <div class="row">
-          <div class="col-12 col-lg-4">
-            <ul class="footer-nav uppercase">
-              <li>
-                <a class="footer-nav-color" href="index.html">Home</a>
-              </li>
-              <li>
-                <a class="footer-nav-color" href="service.html">Services</a>
-              </li>
-              <li>
-                <a class="footer-nav-color" href="memberships.html"
-                  >Memberships</a
-                >
-              </li>
-              <li>
-                <a class="footer-nav-color" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 col-lg-4">
-            <ul class="social-links">
-              <li>
-                <a
-                  href="https://www.facebook.com/sccoachesdublin/"
-                  target="_blank"
-                  ><i class="fa fa-facebook-f"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/sccoaches/" target="_blank"
-                  ><i class="fa fa-instagram"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/channel/UC1KKDqt6wETQVQ7ziP7-XeQ"
-                  target="_blank"
-                  ><i class="fa fa-youtube"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 col-lg-4 footer-location">
-            <h5 class="uppercase">Where to find us</h5>
-            <a
-              href="https://www.google.com/maps/dir//Level+1+SBG+Tallaght,+Glen+Abbey+Complex,+Belgard+Road,+Cookstown,+Dublin+24+%E2%80%8B%E2%80%8B/@53.2850563,-6.4301569,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x486774b2987a9509:0x11b28940d8d4c0dd!2m2!1d-6.3711265!2d53.2957625"
-              target="_blank"
-            >
-              <p>
-                Level 1 SBG Tallaght,<br />
-                Glen Abbey Complex, <br />Belgard Rd, Cookstown, <br />Dublin 24
-                ​
-              </p></a
-            >
-          </div>
+
+    <footer class="container-fluid color-green background-color-purple">
+      <div class="row">
+        <div class="col-lg-4">
+          <ul class="footer-nav uppercase">
+            <li>
+              <a class="color-green color-grey-hover" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="color-green color-grey-hover" href="service.html">Services</a>
+            </li>
+            <li>
+              <a class="color-green color-grey-hover" href="memberships.html"
+                >Memberships</a
+              >
+            </li>
+            <li>
+              <a class="color-green color-grey-hover" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <ul class="social-links color-green color-grey-hover">
+            <li>
+              <a
+                href="https://www.facebook.com/sccoachesdublin/"
+                aria-label="Facebook"
+                target="_blank"
+                ><i class="fa fa-facebook-f color-green color-grey-hover"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/sccoaches/"
+                aria-label="Instagram"
+                target="_blank"
+                ><i class="fa fa-instagram color-green color-grey-hover"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UC1KKDqt6wETQVQ7ziP7-XeQ"
+                aria-label="Youtube"
+                target="_blank"
+                ><i class="fa fa-youtube color-green color-grey-hover"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 footer-location">
+          <h5 class="uppercase">Where to find us</h5>
+          <a
+            href="https://www.google.com/maps/dir//Level+1+SBG+Tallaght,+Glen+Abbey+Complex,+Belgard+Road,+Cookstown,+Dublin+24+%E2%80%8B%E2%80%8B/@53.2850563,-6.4301569,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x486774b2987a9509:0x11b28940d8d4c0dd!2m2!1d-6.3711265!2d53.2957625"
+            class="color-green color-grey-hover"
+            target="_blank"
+          >
+            <p>
+              Level 1 SBG Tallaght,<br />
+              Glen Abbey Complex, <br />Belgard Rd, Cookstown, <br />Dublin 24 ​
+            </p></a
+          >
         </div>
       </div>
     </footer>

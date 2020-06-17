@@ -26,6 +26,8 @@ When you access the website you will be greeted with a photo of current members 
 > The Footer has links to their social media pages and a google maps link to help locating the gym. It also contains a small navagation menu made with some icons.
 >
 > The Navbar and Footer are replicated on each page.
+>
+> **Update** Navbar in screens 991px or less fixed to top of viewport, user issue of flagged that pages were long in smaller screens and access to a navagation would be of benefit.
 
 ![Homepage](assets/images/readme-img/homepage-nav.png) ![Homepage](assets/images/readme-img/homepage-about.png)
 
@@ -65,15 +67,6 @@ These pages will allow new clients join the members area of the website and memb
 3. Members area where you can recieve daily workouts as requested by client.
 4. Team preseason Bootcamps.
 5. Deals on seasonal Bootcamps.
-
-## User Stories
-
-- As a user I want to find out more information about the coaches.
-- As a user I want to easily navigate through the website.
-- As a user I want to contact the coaches if I have any inquiries.
-- As a user I want to find out what classes are available.
-- As a user I want to become a member.
-- As a user I want to find out when a class is on.
 
 ## Wireframes
 
@@ -128,6 +121,15 @@ to see if fit better. I upgraded these alternatives to the offical versions on r
 
   - All Icons were taken from the Font Awesome database.
 
+## User Stories
+
+- As a user I want to find out more information about the coaches.
+- As a user I want to easily navigate through the website.
+- As a user I want to contact the coaches if I have any inquiries.
+- As a user I want to find out what classes are available.
+- As a user I want to become a member.
+- As a user I want to find out when a class is on.
+
 ## Test Scenarios
 
 - Test: Navbar on all screen sizes goes to correct location
@@ -154,12 +156,61 @@ to see if fit better. I upgraded these alternatives to the offical versions on r
   5. Fill in form with empty message field, warning message should appear.
   6. Repeat steps on mobile and tablet views.
 
+- Color contrast checked by:
+  -  [Web Aim Contrast Checker](https://webaim.org/resources/contrastchecker/)
+
 - HTML5 checked on each page by:
 
   - [W3C HTML Validator](https://validator.w3.org/)
 
 - CSS3 checked by:
+
   - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+- Browsers tested on with Random testing technique
+
+  * Chrome
+  * Firefox
+  * Microsoft Edge
+
+#### Bugs Found on testing
+
+  1.  On Chrome and Microsoft Edge image gallery breaking onto next line - resolved
+  2.  Typos in context text - resolved
+  3.  Outside the gym images stretching off screen in mobile view - resolved
+  4.  Forms breaking into footer when inspection when screen is less than 600px in height - resolved
+
+## Deployment
+
+This project is deployed by GitHub
+
+1. Create account with GitHub
+
+2. Create repository
+
+3. Create HTML and CSS files in Gitpod
+
+4. Push files to GitHub
+
+5. Click repository [SC Coaches](https://github.com/brimurphy/sccoaches)
+
+6. Go to repository settings 
+
+7. Scroll down to *GitHub Pages* 
+
+8. Click [SC Coaches link](https://brimurphy.github.io/sccoaches/)
+
+**For Local deployment:**
+
+1. Go to [SC Coaches](https://github.com/brimurphy/sccoaches)
+
+2. Click Clone or Download
+
+3. Click Download Zip
+
+4. When download is complete unzip file
+
+5. Run index.html
 
 ## Acknowledgements
 

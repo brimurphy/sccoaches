@@ -51,7 +51,7 @@
   <body>
     <!--Header-->
     <header>
-      <div class="container-fluid container-navbar">
+      <div class="container-fluid container-navbar container-navbar-fixed">
         <!--Logo-->
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="index.html"
@@ -81,33 +81,33 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mt-2 mt-lg-0 navbar-menu uppercase">
               <li class="nav-item active">
-                <a class="nav-link nav-link-color nav-active" href="index.html"
-                  >Home <span class="sr-only"></span
+                <a class="nav-link color-green nav-active" href="index.html"
+                  >Home <span class="sr-only">(current)</span
                 ></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link nav-link-color" href="service.html"
+                <a class="nav-link color-green" href="service.html"
                   >Services <span class="sr-only"></span
                 ></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link nav-link-color" href="memberships.html"
+                <a class="nav-link color-green" href="memberships.html"
                   >Memberships <span class="sr-only"></span
                 ></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link nav-link-color" href="contact.html"
+                <a class="nav-link color-green" href="contact.html"
                   >Contact <span class="sr-only"></span
                 ></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link nav-link-color" href="sign-up.html"
+                <a class="nav-link color-green" href="sign-up.html"
                   >Sign Up <span class="sr-only"></span
                 ></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link nav-link-color" href="sign-in.html"
-                  >Login <span class="sr-only">(current)</span></a
+                <a class="nav-link color-green" href="sign-in.html"
+                  >Login <span class="sr-only"></span></a
                 >
               </li>
             </ul>
@@ -125,18 +125,18 @@
               The magic of the experience will reshape you.
             </h1>
             <div
-              class="jumbotron jumbotron-callout d-none d-sm-block text-center"
+              class="jumbotron jumbotron-callout d-none d-sm-block text-center color-grey"
             >
-              <h5 class="jumbotron-header uppercase">
+              <h5 class="jumbotron-header uppercase color-grey">
                 <strong>One week free trial!!</strong>
               </h5>
-              <p class="jumbotron-paragraph uppercase">
+              <p class="jumbotron-paragraph uppercase color-grey">
                 Choose any classes Monday to Saturday<br />
                 from our timetable
               </p>
               <hr class="my-2" />
               <a
-                class="btn btn-callout--green btn-lg"
+                class="btn btn-lg btn-green"
                 href="sign-up.html"
                 role="button"
                 >Sign Up!</a
@@ -153,14 +153,14 @@
     <!--our story-->
 
     <section
-      class="container-fluid container-our-story container-our-story--purple"
+      class="container-fluid container-section container-our-story background-color-purple"
     >
       <div class="row">
         <div class="col">
-          <h2 class="section-header our-story-header text-center uppercase">
+          <h2 class="section-header text-center uppercase color-grey">
             About Us
           </h2>
-          <hr class="block-divider block-divider--green" />
+          <div class="block-divider background-color-grey"></div>
         </div>
       </div>
       <div class="row">
@@ -179,62 +179,61 @@
           </p>
         </div>
         <div class="col-8 d-none d-lg-block our-story-img">
-          <img
-            src="assets/images/index-img/stretching.jpg"
-            class=""
-            alt="Stretching"
-          />
-          <img
-            src="assets/images/index-img/group-workout.jpg"
-            class=""
-            alt="Group working out"
-          />
-
-          <img
-            src="assets/images/index-img/ladies-class.jpg"
-            class=""
-            alt="Ladies class"
-          />
-          <img
-            src="assets/images/index-img/classmen.jpg"
-            class=""
-            alt="Mens Class"
-          />
-
-          <img
-            src="assets/images/index-img/girls-lifting.jpg"
-            class=""
-            alt="Girls lifting"
-          />
-
-          <img
-            src="assets/images/index-img/girl-pushups.jpg"
-            class=""
-            alt="Girl doing pushups"
-          />
-          <img
-            src="assets/images/index-img/men-lifting.jpg"
-            class=""
-            alt="Men lifting"
-          />
-          <img
-            src="assets/images/index-img/hike.jpg"
-            class=""
-            alt="Group Hike"
-          />
+          <div class="col">
+            <img
+              src="assets/images/index-img/stretching.jpg"
+              alt="Stretching"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="assets/images/index-img/group-workout.jpg"
+              alt="Group working out"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="assets/images/index-img/ladies-class.jpg"
+              alt="Ladies class"
+            />
+          </div>
+          <div class="col">
+            <img src="assets/images/index-img/classmen.jpg" alt="Mens Class" />
+          </div>
+          <div class="col">
+            <img
+              src="assets/images/index-img/girls-lifting.jpg"
+              alt="Girls lifting"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="assets/images/index-img/girl-pushups.jpg"
+              alt="Girl doing pushups"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="assets/images/index-img/men-lifting.jpg"
+              alt="Men lifting"
+            />
+          </div>
+          <div class="col">
+            <img src="assets/images/index-img/hike.jpg" alt="Group Hike" />
+          </div>
         </div>
       </div>
     </section>
 
     <!--coaches-->
 
-    <section class="container-fluid container-coaches">
+    <section class="container-fluid container-section container-coaches">
       <div class="row">
         <div class="col">
-          <h2 class="section-header coach-header text-center uppercase">
+          <h2 class="section-header text-center uppercase color-green">
             Meet the Coaches
           </h2>
-          <hr class="block-divider block-divider--green" />
+          <div class="block-divider background-color-green"></div>
         </div>
       </div>
       <div class="row coach">
@@ -282,23 +281,23 @@
 
     <!--reviews-->
 
-    <section class="container-fluid container-reviews container-reviews--green">
+    <section class="container-fluid container-section container-reviews background-color-green">
       <div class="row">
         <div class="col-12">
-          <h2 class="section-header reviews-header text-center uppercase">
+          <h2 class="section-header text-center uppercase color-grey">
             What Our Clients say
           </h2>
-          <hr class="block-divider block-divider--grey" />
+          <div class="block-divider background-color-grey"></div>
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-6 col-lg-4 text-center">
-          <blockquote class="blockquote blockquote-reviews">
-            Couldn't recommend SC Coaches more. 5 stars just doesn't seem enough
-            as Lukasz and Sabrina are there every step of the way making sure
-            you don’t give up and pushing you to achieve your goals and out of
-            our comfort zones. The atmosphere is great and everyone is friendly
-            and there to lend a hand if needed.
+          <blockquote class="blockquote blockquote-reviews color-grey">
+            I have just started my journey with Strength and Conditioning
+            Coaches. Sabrina and Lukasz have made it so easy to get started. I
+            love the classes and the girls are a great bunch . Everyone is so
+            supportive. Delighted to be working with Coach Sabrina. Highly
+            Recommend !!!
             <cite class="cite-signature cite-reviews"
               ><img
                 class="reviews-image"
@@ -310,12 +309,12 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-4 text-center">
-          <blockquote class="blockquote blockquote-reviews">
-            I have just started my journey with Strength and Conditioning
-            Coaches. Sabrina and Lukasz have made it so easy to get started. I
-            love the classes and the girls are a great bunch . Everyone is so
-            supportive. Delighted to be working with Coach Sabrina. Highly
-            Recommend !!!
+          <blockquote class="blockquote blockquote-reviews color-grey">
+            Couldn't recommend SC Coaches more. 5 stars just doesn't seem enough
+            as Lukasz and Sabrina are there every step of the way making sure
+            you don’t give up and pushing you to achieve your goals and out of
+            our comfort zones. The atmosphere is great and everyone is friendly
+            and there to lend a hand if needed.
             <cite class="cite-signature cite-reviews"
               ><img
                 class="reviews-image"
@@ -327,7 +326,7 @@
         </div>
 
         <div class="col-lg-4 d-none d-lg-block text-center">
-          <blockquote class="blockquote blockquote-reviews">
+          <blockquote class="blockquote blockquote-reviews color-grey">
             I've trained with Lukasz and Sabrina for 3 years now. Since then
             I've had very little injuries and feel a lot more confident on the
             pitch. They're always there for dietary advice help with technique
@@ -347,63 +346,67 @@
     </section>
 
     <!--Footer-->
-    <footer>
-      <div class="container-fluid footer-color">
-        <div class="row">
-          <div class="col-md-4">
-            <ul class="footer-nav uppercase">
-              <li>
-                <a class="footer-nav-color" href="index.html">Home</a>
-              </li>
-              <li>
-                <a class="footer-nav-color" href="service.html">Services</a>
-              </li>
-              <li>
-                <a class="footer-nav-color" href="memberships.html"
-                  >Memberships</a
-                >
-              </li>
-              <li>
-                <a class="footer-nav-color" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="social-links">
-              <li>
-                <a
-                  href="https://www.facebook.com/sccoachesdublin/"
-                  target="_blank"
-                  ><i class="fa fa-facebook-f"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/sccoaches/" target="_blank"
-                  ><i class="fa fa-instagram"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/channel/UC1KKDqt6wETQVQ7ziP7-XeQ"
-                  target="_blank"
-                  ><i class="fa fa-youtube"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4 footer-location">
-            <h5 class="uppercase">Where to find us</h5>
-            <a
-              href="https://www.google.com/maps/dir//Level+1+SBG+Tallaght,+Glen+Abbey+Complex,+Belgard+Road,+Cookstown,+Dublin+24+%E2%80%8B%E2%80%8B/@53.2850563,-6.4301569,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x486774b2987a9509:0x11b28940d8d4c0dd!2m2!1d-6.3711265!2d53.2957625"
-              target="_blank"
-            >
-              <p>
-                Level 1 SBG Tallaght,<br />
-                Glen Abbey Complex, <br />Belgard Rd, Cookstown, <br />Dublin 24
-                ​
-              </p></a
-            >
-          </div>
+
+    <footer class="container-fluid color-green background-color-purple">
+      <div class="row">
+        <div class="col-lg-4">
+          <ul class="footer-nav uppercase">
+            <li>
+              <a class="color-green color-grey-hover" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="color-green color-grey-hover" href="service.html">Services</a>
+            </li>
+            <li>
+              <a class="color-green color-grey-hover" href="memberships.html"
+                >Memberships</a
+              >
+            </li>
+            <li>
+              <a class="color-green color-grey-hover" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <ul class="social-links color-green color-grey-hover">
+            <li>
+              <a
+                href="https://www.facebook.com/sccoachesdublin/"
+                aria-label="Facebook"
+                target="_blank"
+                ><i class="fa fa-facebook-f color-green color-grey-hover"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/sccoaches/"
+                aria-label="Instagram"
+                target="_blank"
+                ><i class="fa fa-instagram color-green color-grey-hover"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UC1KKDqt6wETQVQ7ziP7-XeQ"
+                aria-label="Youtube"
+                target="_blank"
+                ><i class="fa fa-youtube color-green color-grey-hover"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 footer-location">
+          <h5 class="uppercase">Where to find us</h5>
+          <a
+            href="https://www.google.com/maps/dir//Level+1+SBG+Tallaght,+Glen+Abbey+Complex,+Belgard+Road,+Cookstown,+Dublin+24+%E2%80%8B%E2%80%8B/@53.2850563,-6.4301569,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x486774b2987a9509:0x11b28940d8d4c0dd!2m2!1d-6.3711265!2d53.2957625"
+            class="color-green color-grey-hover"
+            target="_blank"
+          >
+            <p>
+              Level 1 SBG Tallaght,<br />
+              Glen Abbey Complex, <br />Belgard Rd, Cookstown, <br />Dublin 24 ​
+            </p></a
+          >
         </div>
       </div>
     </footer>
